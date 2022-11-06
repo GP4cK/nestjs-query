@@ -1,4 +1,96 @@
  
+# [1.0.0](https://github.com/GP4cK/nestjs-query/compare/v0.30.0...v1.0.0) (2022-11-06)
+
+
+### Bug Fixes
+
+* align @apollo/gateway peer dependencies between @nestjs/graphql & @ptc-org/nestjs-query-graphql ([eb3f9a9](https://github.com/GP4cK/nestjs-query/commit/eb3f9a9157fe06f352eab9988cc535927ed55a58))
+* **core:** fixed filters merged incorrectly causing unexpected behavior ([588dbe5](https://github.com/GP4cK/nestjs-query/commit/588dbe5ebb166db4c5a35fa8d36a3a0ceb3a0836))
+* **core:** Improved workings of `getFilterOmitting` ([28d7e6b](https://github.com/GP4cK/nestjs-query/commit/28d7e6b81f2a63a42331d0d4c5b8fb6ccd3a3d3c))
+* **core:** Improved workings of `getFilterOmitting` ([cb06762](https://github.com/GP4cK/nestjs-query/commit/cb067622ae7d754706f50df8c59ac2d711688e40))
+* **core:** Use correct return types for decorators ([d328d2b](https://github.com/GP4cK/nestjs-query/commit/d328d2beb8c0ebc3048631a97e5b2023b1891b25))
+* **deps:** update dependency apollo-server-plugin-base to v3.3.0 ([26cff92](https://github.com/GP4cK/nestjs-query/commit/26cff9256b85e8a83469744e1852dd9d5092aa23))
+* **deps:** update dependency apollo-server-plugin-base to v3.4.0 ([e3c95f2](https://github.com/GP4cK/nestjs-query/commit/e3c95f2e70382c863a6bdf7ab24a2cb1ab7266e5))
+* **deps:** update dependency apollo-server-types to v3.3.0 ([794c7d0](https://github.com/GP4cK/nestjs-query/commit/794c7d005bc4d696e34f538d202c497b3d1018ac))
+* **deps:** update dependency apollo-server-types to v3.4.0 ([a587a52](https://github.com/GP4cK/nestjs-query/commit/a587a52ff25412d1bae77dbc9a9b0ceca31070a9))
+* **deps:** update dependency graphql-query-complexity to v0.10.0 ([d88ce81](https://github.com/GP4cK/nestjs-query/commit/d88ce81bad0552f1b099c2c86ee9d080d3f1e270))
+* **deps:** update dependency graphql-query-complexity to v0.11.0 ([6ab330b](https://github.com/GP4cK/nestjs-query/commit/6ab330b69de031d8df472888f36754bd8db8b1e0))
+* **deps:** update dependency mysql2 to v2.3.1 ([b41d55e](https://github.com/GP4cK/nestjs-query/commit/b41d55efdba7dd902158846cce52a00c33450e13))
+* **deps:** update dependency mysql2 to v2.3.2 ([c67a172](https://github.com/GP4cK/nestjs-query/commit/c67a1728e2bd76b5e38bd5153735eab95525f543))
+* **deps:** update dependency mysql2 to v2.3.3 ([098f83a](https://github.com/GP4cK/nestjs-query/commit/098f83a1a8ac2d069039468e774242e3f25db7be))
+* **deps:** update dependency rxjs to v7.3.1 ([46e79d4](https://github.com/GP4cK/nestjs-query/commit/46e79d426bcfa85d6ba38080bc62944d7024937a))
+* **deps:** update dependency rxjs to v7.4.0 ([5ffd717](https://github.com/GP4cK/nestjs-query/commit/5ffd717698d2e74a1d2e8efe83610c6e4ea4ffef))
+* **docs/lint:** update for new @ObjectId decorator - fix linting error ([63f8b94](https://github.com/GP4cK/nestjs-query/commit/63f8b94fde3267a55512f2182fda2adde00084e9))
+* **docs:** update DTO docs too ([bd4a282](https://github.com/GP4cK/nestjs-query/commit/bd4a2825f40dfebcd40cb479586a4b2e9c2f6ee8))
+* Fixed almost all tests ([f614f04](https://github.com/GP4cK/nestjs-query/commit/f614f04e4e75c87c3e72b1c30eb7899d3770a7c1))
+* Fixed package.json files ([97cbfd2](https://github.com/GP4cK/nestjs-query/commit/97cbfd26ba05afae345e4e21442744a872899b0b))
+* **mongoose,typegoose:** fix type errors from bad renovate bot merge ([46d9a6f](https://github.com/GP4cK/nestjs-query/commit/46d9a6f49c011c5bc40d00b92d2fa17059f2702c))
+* **query-graphql:** Do not generate aggregate types if disabled ([abd62a5](https://github.com/GP4cK/nestjs-query/commit/abd62a52a8c1f32814d4477a97c269eb1c078771))
+* **query-graphql:** Fixed `between` and `notBetween` types not generated ([be4bed6](https://github.com/GP4cK/nestjs-query/commit/be4bed6b60d9ac8fd2432b7f5e04ac1a2a596e29))
+* **query-graphql:** Fixed `disableFilter` and `disableSort` still validating with `class-validator` ([0b506a6](https://github.com/GP4cK/nestjs-query/commit/0b506a6dce479b740d186f8c8fab1d0f92221f8e))
+* **query-graphql:** Fixed `ResolveOneRelation` interface ([e768900](https://github.com/GP4cK/nestjs-query/commit/e768900ae33949cb89c7ab4039b7cb008617a0e9))
+* **query-graphql:** Fixed default sorting/filtering for relations ([0877c23](https://github.com/GP4cK/nestjs-query/commit/0877c2374fe37725033ec14a7dc7b0a7d3f2e026))
+* **query-graphql:** Fixed empty object accepted by required filters ([f162cf3](https://github.com/GP4cK/nestjs-query/commit/f162cf3f6dde3dd6b6cb7846251a010c9c9cd9f7)), closes [doug-martin/nestjs-query#1504](https://github.com/doug-martin/nestjs-query/issues/1504)
+* **query-graphql:** Fixed incorrect peer dep of `@nestjs/graphql` ([ce671a9](https://github.com/GP4cK/nestjs-query/commit/ce671a95e95cb194cbfee4afdb72224eac5a5131)), closes [#39](https://github.com/GP4cK/nestjs-query/issues/39)
+* **query-graphql:** Use `getById` instead of `findById` to correctly throw not found errors ([2b98581](https://github.com/GP4cK/nestjs-query/commit/2b9858164653dba552999ac1933ac256db09e4c8))
+* **query-typegoose:** Fixed package.json ([b947f06](https://github.com/GP4cK/nestjs-query/commit/b947f06d920feb356815cc35be51520b38aefced))
+* **query-typegoose:** update to new nestjs-typegoose package from m8a ([85a4748](https://github.com/GP4cK/nestjs-query/commit/85a4748e4cb12078cbd75e7783c63ca69d8496e5))
+* **query-typeorm:** Align fetching of entity metadata with `@nestjs/typeorm` ([545074f](https://github.com/GP4cK/nestjs-query/commit/545074fa6511dea47d64ecbea84bf586a1c9ca0f))
+* **query-typeorm:** Fixed `deleteMany` throwing error when called with filter that contained relations ([53c6c6b](https://github.com/GP4cK/nestjs-query/commit/53c6c6b9f0533f311d0de56d78a1a95a61713438))
+* **query-typeorm:** Fixed `deleteMany` throwing error when called with filter that contained relations ([6f8ac0b](https://github.com/GP4cK/nestjs-query/commit/6f8ac0b7960447e903c40635990addb66b46348c))
+* **query-typeorm:** Fixed `getManyToManyOwnerMeta` ([887df20](https://github.com/GP4cK/nestjs-query/commit/887df206eca99a80e5f8b37b5f00711d1ee3ecec))
+* **query-typeorm:** Fixed `updateMany` not supporting relations ([93ef5a9](https://github.com/GP4cK/nestjs-query/commit/93ef5a9002b1c2206a39770d6f8f59c5bfe26ecc))
+* **query-typeorm:** Fixed group by for aggregated date fields ([7ffeaf6](https://github.com/GP4cK/nestjs-query/commit/7ffeaf6b9e400eb027298a3870712eb7124c88bb))
+* **query-typeorm:** Fixed some typings ([49709ce](https://github.com/GP4cK/nestjs-query/commit/49709cea9aa7bec3e855121404d4e9ca9bb4431b))
+* **query-typeorm:** Use `qb` directly when adding additional fields ([5843ac4](https://github.com/GP4cK/nestjs-query/commit/5843ac4a7f0542efa9d33d1798e7ac3c2eaf16ca))
+* Remove incompatible class-transformer version from peer ([00f193d](https://github.com/GP4cK/nestjs-query/commit/00f193d0000c13e46b9a5868a7b213162f025ac3))
+* **sequelize:** fix bad renovate bot merge revert to sequelize@6.6.2 ([9225c6f](https://github.com/GP4cK/nestjs-query/commit/9225c6fca55d47715dc4debf01a03b884ae16cf0))
+
+
+### chore
+
+* Update third batch of deps + linting rules ([acaff0f](https://github.com/GP4cK/nestjs-query/commit/acaff0fd56918a26cc108d6d98ef71b275400da4))
+
+
+### Code Refactoring
+
+* Move project to NX ([c70a022](https://github.com/GP4cK/nestjs-query/commit/c70a022671b84025bb10ba3db0a3e5a11ddcccd7))
+
+
+### Features
+
+* Added support for `withDeleted` in `Relation` decorator ([923d972](https://github.com/GP4cK/nestjs-query/commit/923d972660d06cc76065d90b4a46f8775669ff0b))
+* allow for passing `useSoftDelete` in resolver opts ([4c59cd8](https://github.com/GP4cK/nestjs-query/commit/4c59cd82f87663a40634523101c7f511afe77e63))
+* Bump all packages ([1d36ee0](https://github.com/GP4cK/nestjs-query/commit/1d36ee0401c7f2a82f2ea06092139526ea879f7c))
+* **docs:** Enabled search again ([4c5b83b](https://github.com/GP4cK/nestjs-query/commit/4c5b83bebef184bde75128dbfeea7eeecb7295b7)), closes [#27](https://github.com/GP4cK/nestjs-query/issues/27)
+* **query-graphql:** Added `disableFilter` and `disableSort` ([80cc8e9](https://github.com/GP4cK/nestjs-query/commit/80cc8e988b73d057812cba901e909e1774eea77c))
+* **query-graphql:** allow descriptions to be defined ([568f228](https://github.com/GP4cK/nestjs-query/commit/568f2288efaefcbe0d3360284d626e6030165374))
+* **query-graphql:** allow descriptions to be defined in relations ([0fe9580](https://github.com/GP4cK/nestjs-query/commit/0fe9580bae5c292f2760e123e88f569e60253df4))
+* **query-typeorm:** Updated Typeorm to `0.3.8` ([de00f77](https://github.com/GP4cK/nestjs-query/commit/de00f77965d605ce34e96378a89794347677656c))
+* Updated some deps + cleanup incorrect changelogs ([f877a9c](https://github.com/GP4cK/nestjs-query/commit/f877a9c7e1c4f172ed9b94b33398da596e6222f7))
+
+
+### Performance Improvements
+
+* **query-typeorm:** Rewrote `batchQueryRelations` to use one query ([c7aa255](https://github.com/GP4cK/nestjs-query/commit/c7aa255e11e86bf13e87e7d3cd26ef34d556bb1a))
+* **query-typeorm:** Use existing join alias if there is one ([419d5b4](https://github.com/GP4cK/nestjs-query/commit/419d5b4f23efa111f698620e118b7168a1a594bd))
+
+
+### Reverts
+
+* Revert "chore(deps): update dependency @nestjs/mongoose to v9.0.1" ([9ea465e](https://github.com/GP4cK/nestjs-query/commit/9ea465e23a387b0b608cf07affe93e41af69e72d))
+* Revert "fix(query-typeorm): Fixed `deleteOne` returning entity without its id" ([205fdd0](https://github.com/GP4cK/nestjs-query/commit/205fdd01e0361ff3da2f1d63fb56ed4686a21427))
+
+
+### BREAKING CHANGES
+
+* We want the next major release
+* Nothing really but we want to be version 2
+* Nothing special, just want the major version bump as we updated a lot of deps
+* Project is moved to NX, deps may still be incorrect
+
+
+
 ## [1.1.2](https://github.com/TriPSs/nestjs-query/compare/v1.1.1...v1.1.2) (2022-10-24)
 
 
